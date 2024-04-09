@@ -30,6 +30,8 @@ ul {
 body {
     margin: 0;
     font-family: 'Bai Jamjuree', sans-serif;
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 h1,
@@ -47,6 +49,7 @@ main {
     background-image: url(../assets/images/bg-header-mobile.png);
     background-repeat: no-repeat;
     text-align: center;
+    margin-bottom: 160px;
 }
 
 @media screen and (width>=768px) {
@@ -63,12 +66,16 @@ main {
     letter-spacing: 0.12px;
     line-height: 26px;
     color: var(--text-color);
+    margin-bottom: 48px;
 }
 
 @media screen and (width>=768px) {
     .text {
-        width: 730px;
         margin-inline: auto;
+    }
+
+    .text--long {
+        width: 730px;
     }
 }
 
@@ -105,4 +112,25 @@ main {
 
 .section {
     text-align: center;
+}
+
+.article {
+    width: 350px;
+}
+
+@media screen and (width>=768px) {
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image-computer {
+        position: relative;
+        left: -100px;
+    }
+
+    .article--left {
+        text-align: left;
+    }
 }
